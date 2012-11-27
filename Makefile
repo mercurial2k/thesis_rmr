@@ -18,9 +18,13 @@ intro/processed.tex: intro/sample.tex
 
 # Chapter Two
 
-## deps += ...
-## cleans += ...
-## etc
+deps += ch2/ch2.tex #ch2/test.tex
+cleans += ch2/ch2.aux #ch2/test.tex
+
+# Chapter Three
+
+# deps += 
+# cleans =
 
 
 # The thesis itself. We move the PDF to a new filename so that viewers

@@ -39,7 +39,7 @@
 % Other setup:
 
 \usepackage[T1]{fontenc} % see http://tinyurl.com/67zdxwf
-\usepackage{microtype} % various subtle typographic improvements
+%\usepackage{microtype} % various subtle typographic improvements. ***commented out because microtype is not scalable, and was causing pdflatex to crash out*** 
 \usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue,pdfusetitle]{hyperref}
 \usepackage{pdflscape} % allows landscape-oriented figures with PDF page rotation
 \usepackage{aasmacros,amsmath,amssymb,graphicx}
@@ -83,5 +83,7 @@ I would like to acknowledge lksajfd.
 \end{frontmatter}
 
 \include{intro/intro}
+\include{ch2/ch2}
+
 \bibliography{thesis}{}
 \end{document}
