@@ -30,8 +30,8 @@
 
 \newcommand{\newblock}{\par} % need this for some natbib internal bug
 \usepackage{natbib}
-\citestyle{aa}
-\bibliographystyle{yahapj}
+\setcitestyle{square,numbers,comma} % citations numbered, in square brackets, comma-separated
+\bibliographystyle{achemso} % JACS-style bibliography
 \setlength{\bibsep}{0ex} % single-space entries
 \def\bibpreamble{\addcontentsline{toc}{chapter}{Bibliography}} % get a good TOC entry
 
@@ -40,7 +40,7 @@
 
 \usepackage[T1]{fontenc} % see http://tinyurl.com/67zdxwf
 %\usepackage{microtype} % various subtle typographic improvements. ***commented out because microtype is not scalable, and was causing pdflatex to crash out*** 
-\usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue,pdfusetitle]{hyperref}
+\usepackage[colorlinks,urlcolor=black,citecolor=black,linkcolor=black,pdfusetitle]{hyperref}
 \usepackage{pdflscape} % allows landscape-oriented figures with PDF page rotation
 \usepackage{aasmacros,amsmath,amssymb,graphicx}
 \usepackage{mydeluxetable} % deluxetable customized to play well with ucthesis
@@ -83,7 +83,7 @@ I would like to acknowledge lksajfd.
 \end{frontmatter}
 
 \include{intro/intro}
-\include{ch2/ch2}
+\include{ch_xenon/ch_xenon}
 
 \bibliography{thesis}{}
 \end{document}
